@@ -1,11 +1,18 @@
-def fizzbuzz(int)
-  if int %3 == 0 && int %5 != 0
-    return 'Fizz'
-  elsif int %5 == 0 && int %3 != 0
-    return 'Buzz'
-  elsif int %3 == 0 && int %5 == 0
-    return 'FizzBuzz'
-  else
-    return nil
-  end
+# def fizzbuzz(arg)
+#   if arg % 3 == 0 && arg % 5 != 0
+#     "Fizz"
+#   elsif arg % 5 == 0 && arg % 3 != 0
+#     "Buzz"
+#   elsif arg % 3 == 0 && arg % 5 == 0
+#     "FizzBuzz"
+#   else
+#     nil
+#   end
+# end
+
+def fizzbuzz(num)
+  result = ""
+  result += "Fizz" if (num % 3).zero?
+  result += "Buzz" if (num % 5).zero?
+  result == "" ? nil : result
 end
